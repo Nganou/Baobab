@@ -1,3 +1,5 @@
+#Serge Nganou 
+
 from django.db import models
 from django.core.validators import URLValidator
 from django.utils.encoding import smart_unicode
