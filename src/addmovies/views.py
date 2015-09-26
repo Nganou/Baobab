@@ -1,3 +1,4 @@
+# Serge Nganou
 # Create your movie views here.
 # This is where the request (POST or GET) get interpretted
 # Also when a user tres to enter a movie with title and year, this will
