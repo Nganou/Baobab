@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fresh Baobab!</title>
+        <!-- Bootstrap 3 -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+        
+        <!-- Moved the inline CSS to static directory-->
+        <style>
+            /*
+     * reorganized the css from the fresh_tomatoes to CSS folder
+     * ---------------------------------------------------------
+     */
+    
+            body {
+                padding-top: 0px;
+            }
+            #trailer .modal-dialog {
+                margin-top: 200px;
+                width: 640px;
+                height: 480px;
+            }
+            .hanging-close {
+                position: absolute;
+                top: -12px;
+                right: -12px;
+                z-index: 9001;
+            }
+            #trailer-video {
+                width: 100%;
+                height: 100%;
+            }
+            .movie-tile {
+                margin-bottom: 20px;
+                padding-top: 20px;
+            }
+            .movie-tile:hover {
+                background-color: #EEE;
+                cursor: pointer;
+            }
+            .scale-media {
+                padding-bottom: 56.25%;
+                position: relative;
+            }
+            .scale-media iframe {
+                border: none;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+                background-color: white;
+            }
+        </style>
+    
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="header clearfix">
+            <h2 class="nav"><center>B A O B A B</center></h2>
+        </div>
+        <div class= "navbar navbar-inverse navbar-static-top" role="navigation">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="../">Home</a></li>
+            <li role="presentation"><a href="">Sign Up</a></li>
+            <li role="presentation"><a href="../addmovie">Add Movie</a></li>
+          </ul>
+        </nav>
+        </div>
+    </div>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <center>
+        <h1>Sign Up</h1>
+    <form "method="POST" action="">
+        {% csrf_token %} 
+        <h5>User:</h5>
+        {{ form.as_p }}
+        <input type="submit" value="SUBMIT" class = ""btn btn-successbtn-block>
+     </form>
+    </center>
+    </body>
+</html>
