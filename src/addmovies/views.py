@@ -33,7 +33,7 @@ def addmovie(request):
             srch_mov["poster_image_url"] = i.poster_image_url
             srch_mov["id"] = i.id
             
-        if srch_mov["storyline"] == " " and srch_mov["poster_image_url"] == " ":     
+        if srch_mov["storyline"] == "" and srch_mov["poster_image_url"] == "":     
             param = dict(t=srch_mov["title"] ,start=1,y=srch_mov["release_date"], plot='short', r='json', apikey='cb300224')
             r = requests.get(imdb_url, params=param)
             json_file = json.loads(r.content)
