@@ -36,8 +36,13 @@ Environment Setup and Installed Modules
 Run the application
 ----------------------------------------------
 6. 
-  - Copy the entire /Baobab project into your desired location on your computer.
+  - Run command virtualenv your-project-name
+  - copy the all the files from Baobab into your-project-name(replacing the old one)
+  - Activate the virtual environemnt:
+    - cd to your-project-name directory
+    - source bin/activate
   - perform pip freeze to ensure the following modules are installed (if not installed them as described above):
+    -BeautifulSoup==3.2.1
     - Django==1.6.1
     - django-registration==1.0
     - Pattern==2.6
@@ -45,8 +50,9 @@ Run the application
     - South==1.0.2
     - stripe==1.27.0
     - wheel==0.24.0
-  - Change directory to /src directory within the Baobab folder.
-  - Run the command to activate the virtual environment: source bin/activate
+  - cd to your-project-name/src/
+  -run commnand:
+    - ./manage.py runserver
   - navigate to the URL displayed: http://127.0.0.1:8000
   
 -----------------------------------
