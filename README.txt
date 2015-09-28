@@ -16,6 +16,7 @@ If you are getting permission issues while installing libraries, follow guide su
 -----------------------------------------------  
 Environment Setup and Installed Modules
 -----------------------------------------------
+The modules below may need to be installed, but first follow the "Run the application" steps below
 
 1. Installed pip: 
   - sudo easy_install pip
@@ -32,10 +33,11 @@ Environment Setup and Installed Modules
   
 5. run the command to display all the modules installed:
   - pip freeze
+  
 ----------------------------------------------
 Run the application
 ----------------------------------------------
-6. 
+1. 
   - Run command virtualenv your-project-name
   - copy the all the files from Baobab into your-project-name(replacing the old one)
   - Activate the virtual environemnt:
